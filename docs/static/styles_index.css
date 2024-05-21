@@ -181,6 +181,65 @@ h1 {
     animation-timing-function: ease;
 }
 
+/* adjusting the existing css styles for a smaller display with media querry */
+@media (max-width: 768px) {
+    body {
+        font-size: medium;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    /* centers navigation links for mobile */
+    nav {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* adjusting container margins and paddings */
+    .image-container {
+        margin: 10px;
+    }
+
+    .text-container {
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    /* adjustin font sizes for better readability */
+    .hi-text, .name-text {
+        font-size: large;
+    }
+
+    .i-am, .software {
+        font-size: small;
+    }
+
+    .third-paragraph {
+        font-size: small;
+    }
+
+    /* social media links adjustments */
+    .social-media {
+    margin-left: 0;
+    padding-left: 10px;
+    text-align: center;
+
+    }
+
+    .social-media ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
