@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projectspage</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles_projects.css') }}">
+    <link rel="stylesheet" href="../static/styles_projects.css">
 </head>
 
 <body>
@@ -40,12 +40,12 @@
                     Therefore, I've decided against sharing them in this space. If you're interested,<br>
                     you can find all of these projects on my GitHub page
                     <a href="https://github.com/weybul?tab=overview&from=2024-04-01&to=2024-04-30" target="_blank">
-                        <img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="first-paragraph-git link-image">
+                        <img src="../static/images/git.png" alt="GitHub" class="first-paragraph-git link-image">
                     </a>. Thank you!
                 </p>
-                <img src="{{ url_for('static', filename='images/hangman.png') }}" alt="Hangman" class="hang_shot" onclick="openModal('container', 'hangman.png')">
-                <img src="{{ url_for('static', filename='images/minesweeper.png') }}" alt="Minesweeper" class="mine_shot" onclick="openModal('container', 'minesweeper.png')">
-                <img src="{{ url_for('static', filename='images/tictactoe.png') }}" alt="Tic-Tac-Toe" class="tic_shot" onclick="openModal('container', 'tictactoe.png')">
+                <img src="../static/images/hangman.png" alt="Hangman" class="hang_shot" onclick="openModal('container', 'hangman.png')">
+                <img src="../static/images/minesweeper.png" alt="Minesweeper" class="mine_shot" onclick="openModal('container', 'minesweeper.png')">
+                <img src="../static/images/tictactoe.png" alt="Tic-Tac-Toe" class="tic_shot" onclick="openModal('container', 'tictactoe.png')">
             </div>
         </section>
 
@@ -56,7 +56,7 @@
                     <span class="project">Checkers</span>
                 </h3>
                 <ul>
-                    <li><a href="https://github.com/weybul/Checkers-AI" target="_blank"><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="checkers-git"></a></li>
+                    <li><a href="https://github.com/weybul/Checkers-AI" target="_blank"><img src="../static/images/git.png" alt="GitHub" class="checkers-git"></a></li>
                 </ul>
             </div>
             <div class="container-checkers">
@@ -69,9 +69,9 @@
                     substantial amount of time to it. Initially, it took me seven full days to complete, and<br>
                     I spent additional days rebuilding it on my own. Overall, I gave it everything I had,<br>
                     probably even more, to thoroughly understand how each line of code worked!</p>
-                    <img src="{{ url_for('static', filename='images/checkers1.png') }}" alt="Checkers" class="checker1_shot" onclick="openModal('container-checkers', 'checkers1.png')">
-                    <img src="{{ url_for('static', filename='images/gif_checkers.gif') }}" alt="Checkers" class="gif_checkers" onclick="openModal('container-checkers', 'gif_checkers.gif')">
-                    <img src="{{ url_for('static', filename='images/checkers2.png') }}" alt="Checkers" class="checker2_shot" onclick="openModal('container-checkers', 'checkers2.png')">
+                    <img src="../static/images/checkers1.png" alt="Checkers" class="checker1_shot" onclick="openModal('container-checkers', 'checkers1.png')">
+                    <img src="../static/images/gif_checkers.gif" alt="Checkers" class="gif_checkers" onclick="openModal('container-checkers', 'gif_checkers.gif')">
+                    <img src="../static/images/checkers2.png" alt="Checkers" class="checker2_shot" onclick="openModal('container-checkers', 'checkers2.png')">
             </div>
         </section>
         <div class="container-techs">
@@ -79,8 +79,8 @@
                 <span class="techs">Technologies</span>
                 <span class="used">Used:</span>
             </h4>
-            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python" class="python">
-            <img src="{{ url_for('static', filename='images/pygame.png') }}" alt="Pygame" class="pygame">
+            <img src="../static/images/python.png" alt="Python" class="python">
+            <img src="../static/images/pygame.png" alt="Pygame" class="pygame">
         </div>
         <div class="container-list-git">
             <h5>
@@ -88,7 +88,7 @@
                 <span class="list">List</span>
             </h5>
             <ul>
-                <li><a href="https://github.com/weybul/To-do-List" target="_blank"><br><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="todolist-git"></a></li>
+                <li><a href="https://github.com/weybul/To-do-List" target="_blank"><br><img src="../static/images/git.png" alt="GitHub" class="todolist-git"></a></li>
             </ul>
         </div>
         <!-- contianer for to-do-list -->
@@ -101,17 +101,17 @@
                 confused, having only built things through tutorials before. However,<br>
                 as soon as I committed to it, things became more familiar and I<br>
                 generally felt at ease.</p>
-                <img src="{{ url_for('static', filename='images/list1.png') }}" alt="To-do-List" class="list1_shot" onclick="openModal('container-todolist', 'list1.png')">
-                <img src="{{ url_for('static', filename='images/list2.png') }}" alt="To-do-List" class="list2_shot" onclick="openModal('container-todolist', 'list2.png')">
-                <img src="{{ url_for('static', filename='images/gif_list.gif') }}" alt="To-do-List" class="gif_list" onclick="openModal('container-todolist', 'gif_list.gif')">
+                <img src="../static/images/list1.png" alt="To-do-List" class="list1_shot" onclick="openModal('container-todolist', 'list1.png')">
+                <img src="../static/images/list2.png" alt="To-do-List" class="list2_shot" onclick="openModal('container-todolist', 'list2.png')">
+                <img src="../static/images/gif_list.gif" alt="To-do-List" class="gif_list" onclick="openModal('container-todolist', 'gif_list.gif')">
         </div>
         <div class="list-techs">
             <h6>
                 <span class="techs-list">Technologies</span>
                 <span class="used-list">Used:</span>
             </h6>
-            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python" class="py">
-            <img src="{{ url_for('static', filename='images/tk.png') }}" alt="Tkinter" class="tk">
+            <img src="../static/images/python.png" alt="Python" class="py">
+            <img src="../static/images/tk.png" alt="Tkinter" class="tk">
         </div>
         <div class="container-weatherapp-git">
             <h6 class="second-h6">
@@ -119,7 +119,7 @@
                 <span class="app">App</span>
             </h6>
             <ul>
-                <li><a href="https://github.com/weybul/WeatherApp" target="_blank"><br><br><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="weatherapp-git"></a></li>
+                <li><a href="https://github.com/weybul/WeatherApp" target="_blank"><br><br><img src="../static/images/git.png" alt="GitHub" class="weatherapp-git"></a></li>
             </ul>
         </div>
         <!-- div for container weather app -->
@@ -135,9 +135,9 @@
                 specifically finding the right GIFs and then making sure they were transparent<br> 
                 before I could use them took quite some time and effort. Overall it wasn't a<br> 
                 bad experience.</p>
-                <img src="{{ url_for('static', filename='images/weather1.png') }}" alt="WeatherApp" class="weather1_shot" onclick="openModal('container-weatherapp', 'weather1.png')">
-                <img src="{{ url_for('static', filename='images/gif_weather.gif') }}" alt="WeatherAPP" class="gif_weather" onclick="openModal('container-weatherapp', 'gif_weather.gif')">
-                <img src="{{ url_for('static', filename='images/weather2.png') }}" alt="WeatherApp" class="weather2_shot" onclick="openModal('container-weatherapp', 'weather2.png')">
+                <img src="../static/images/weather1.png" alt="WeatherApp" class="weather1_shot" onclick="openModal('container-weatherapp', 'weather1.png')">
+                <img src="../static/images/gif_weather.gif" alt="WeatherAPP" class="gif_weather" onclick="openModal('container-weatherapp', 'gif_weather.gif')">
+                <img src="../static/images/weather2.png" alt="WeatherApp" class="weather2_shot" onclick="openModal('container-weatherapp', 'weather2.png')">
         </div>
         <p>
             <span class="Note"><br>Note:</span>
@@ -149,8 +149,8 @@
                 <span class="techs-weatherapp"><br>Technologies</span>
                 <span class="used-weatherapp">Used:</span>
             </h6>
-            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python" class="py-weatherapp">
-            <img src="{{ url_for('static', filename='images/tk.png') }}" alt="Tkinter" class="tk-weatherapp">
+            <img src="../static/images/python.png" alt="Python" class="py-weatherapp">
+            <img src="../static/images/tk.png" alt="Tkinter" class="tk-weatherapp">
         </div>
     </main>
     
@@ -217,7 +217,7 @@
         }
 
         modal.style.display = "block";
-        modalImage.src = "{{ url_for('static', filename='images/') }}" + imageSrc;
+        modalImage.src = "../static/images/" + imageSrc;
 
         // Find the index of the selected image
         var modalImages = document.querySelectorAll(`.${containerId} img:not(.link-image)`);
