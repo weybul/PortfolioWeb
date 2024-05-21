@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles_index.css') }}">
+    <link rel="stylesheet" href="static/styles_index.css">
 </head>
 <body>
     <header>
@@ -16,12 +16,12 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Templates/projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
     <div class="image-container">
-        <img src="{{ url_for('static', filename='images/img.png') }}" alt="profile picture">
+        <img src="static/images/img.png" alt="profile picture">
     </div>
     <div class="text-container">
         <p class="first-paragraph">
@@ -35,10 +35,10 @@
         </p>
         <div class="social-media">
             <ul>
-                <li><a href="https://github.com/weybul?tab=overview&from=2024-04-01&to=2024-04-30"><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub"></a></li>
-                <li><a href="https://www.linkedin.com/in/abdul-wahab-050b66305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="{{ url_for('static', filename='images/linked_in.png') }}" alt="Linked In"></a></li>
-                <li><a href="mailto:ah94488@gmail.com"><img src="{{ url_for('static', filename='images/gmail.png') }}" alt="G-Mail"></a></li>
-                <li><a href="https://www.instagram.com/eywahab?utm_source=qr&r=nametag"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a></li>
+                <li><a href="https://github.com/weybul?tab=overview&from=2024-04-01&to=2024-04-30"><img src="static/images/git.png" alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/abdul-wahab-050b66305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="static/images/linked_in.png" alt="Linked In"></a></li>
+                <li><a href="mailto:ah94488@gmail.com"><img src="static/images/gmail.png" alt="G-Mail"></a></li>
+                <li><a href="https://www.instagram.com/eywahab?utm_source=qr&r=nametag"><img src="static/images/instagram.png" alt="Instagram"></a></li>
             </ul>
         </div>
     </div>
