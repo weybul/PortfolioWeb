@@ -1,0 +1,46 @@
+<!-- home page template -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_index.css') }}">
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="wel">Welcome To My</span>
+            <span class="come">Webfolio!</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='images/img.png') }}" alt="profile picture">
+    </div>
+    <div class="text-container">
+        <p class="first-paragraph">
+            <span class="hi-text">Hi! This is </span><span class="name-text">Abdul Wahab.</span>
+        </p>
+        <p class="second-paragraph">
+            <span class="i-am">I'm a </span><span class="software">Software Engineer/Full Stack Developer in Training</span>
+        </p>
+        <p class="third-paragraph">
+            "I've always been drawn to technology and its potential to shape our<br> future. The advent of AI, with its promises of automation and<br> intelligent systems, particularly caught my attention and spurred<br> me into action. From tinkering with Python projects to exploring<br> web development, my journey has been fueled by curiosity and a<br> desire to understand how things work. While I haven't set a<br> specific goal yet, my aim is to continue learning and adapting,<br> with the hope of finding my place in the dynamic world of tech."
+        </p>
+        <div class="social-media">
+            <ul>
+                <li><a href="https://github.com/weybul?tab=overview&from=2024-04-01&to=2024-04-30"><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/abdul-wahab-050b66305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="{{ url_for('static', filename='images/linked_in.png') }}" alt="Linked In"></a></li>
+                <li><a href="mailto:ah94488@gmail.com"><img src="{{ url_for('static', filename='images/gmail.png') }}" alt="G-Mail"></a></li>
+                <li><a href="https://www.instagram.com/eywahab?utm_source=qr&r=nametag"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

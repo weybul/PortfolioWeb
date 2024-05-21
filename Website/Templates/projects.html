@@ -1,0 +1,409 @@
+<!--projects page template-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projectspage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_projects.css') }}">
+</head>
+
+<body>
+
+    <header class="fixed-header">
+        <h1>
+            <span class="all">All We've</span>
+            <span class="we">Built</span>
+            <span class="have">so</span>
+            <span class="built">Far!</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>
+                <span class="little">A little introductory</span>
+                <span class="read">Read</span>
+            </h2>
+            <div class="container">
+                <p class="first-paragraph"><br>I initially intended to share some command-line version projects of classic board<br>
+                    games like Hangman, Minesweeper, and Tic-Tac-Toe. However, upon reflection, I<br>
+                    realized that these projects might not be as engaging for you to explore here.<br>
+                    Therefore, I've decided against sharing them in this space. If you're interested,<br>
+                    you can find all of these projects on my GitHub page
+                    <a href="https://github.com/weybul?tab=overview&from=2024-04-01&to=2024-04-30" target="_blank">
+                        <img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="first-paragraph-git link-image">
+                    </a>. Thank you!
+                </p>
+                <img src="{{ url_for('static', filename='images/hangman.png') }}" alt="Hangman" class="hang_shot" onclick="openModal('container', 'hangman.png')">
+                <img src="{{ url_for('static', filename='images/minesweeper.png') }}" alt="Minesweeper" class="mine_shot" onclick="openModal('container', 'minesweeper.png')">
+                <img src="{{ url_for('static', filename='images/tictactoe.png') }}" alt="Tic-Tac-Toe" class="tic_shot" onclick="openModal('container', 'tictactoe.png')">
+            </div>
+        </section>
+
+        <section>
+            <div class="container-checkers-git">
+                <h3>
+                    <span class="first"><br>1.</span>
+                    <span class="project">Checkers</span>
+                </h3>
+                <ul>
+                    <li><a href="https://github.com/weybul/Checkers-AI" target="_blank"><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="checkers-git"></a></li>
+                </ul>
+            </div>
+            <div class="container-checkers">
+                <p class="second-paragraph"><br>This is the only project I'm sharing here that I've built with the help of tutorials.<br>
+                    It was a significant leap in complexity compared to the projects I had built so far.<br>
+                    Checkers was also the first project I built with a graphical user interface. The project's<br>
+                    structure heavily emphasized Object-Oriented Programming, which inspired me to adopt<br>
+                    the same approach for my own projects. This was the second project where I implemented<br>
+                    the minimax algorithm. Although I built this project through a tutorial, I dedicated a<br>
+                    substantial amount of time to it. Initially, it took me seven full days to complete, and<br>
+                    I spent additional days rebuilding it on my own. Overall, I gave it everything I had,<br>
+                    probably even more, to thoroughly understand how each line of code worked!</p>
+                    <img src="{{ url_for('static', filename='images/checkers1.png') }}" alt="Checkers" class="checker1_shot" onclick="openModal('container-checkers', 'checkers1.png')">
+                    <img src="{{ url_for('static', filename='images/gif_checkers.gif') }}" alt="Checkers" class="gif_checkers" onclick="openModal('container-checkers', 'gif_checkers.gif')">
+                    <img src="{{ url_for('static', filename='images/checkers2.png') }}" alt="Checkers" class="checker2_shot" onclick="openModal('container-checkers', 'checkers2.png')">
+            </div>
+        </section>
+        <div class="container-techs">
+            <h4>
+                <span class="techs">Technologies</span>
+                <span class="used">Used:</span>
+            </h4>
+            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python" class="python">
+            <img src="{{ url_for('static', filename='images/pygame.png') }}" alt="Pygame" class="pygame">
+        </div>
+        <div class="container-list-git">
+            <h5>
+                <span class="todo"><br><br>2. To do</span>
+                <span class="list">List</span>
+            </h5>
+            <ul>
+                <li><a href="https://github.com/weybul/To-do-List" target="_blank"><br><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="todolist-git"></a></li>
+            </ul>
+        </div>
+        <!-- contianer for to-do-list -->
+        <div class="container-todolist">
+            <p class="third-paragraph"><br>This was the first project I built on my own that had a graphical user<br>
+                interface, and it also introduced me to Tkinter. I discovered that<br>
+                building a project on your own is considerably a lot more desirable<br>
+                than creating one by watching tutorials. Overall, I enjoyed making<br>
+                something on my own. It was difficult at first, and I felt extremely<br>
+                confused, having only built things through tutorials before. However,<br>
+                as soon as I committed to it, things became more familiar and I<br>
+                generally felt at ease.</p>
+                <img src="{{ url_for('static', filename='images/list1.png') }}" alt="To-do-List" class="list1_shot" onclick="openModal('container-todolist', 'list1.png')">
+                <img src="{{ url_for('static', filename='images/list2.png') }}" alt="To-do-List" class="list2_shot" onclick="openModal('container-todolist', 'list2.png')">
+                <img src="{{ url_for('static', filename='images/gif_list.gif') }}" alt="To-do-List" class="gif_list" onclick="openModal('container-todolist', 'gif_list.gif')">
+        </div>
+        <div class="list-techs">
+            <h6>
+                <span class="techs-list">Technologies</span>
+                <span class="used-list">Used:</span>
+            </h6>
+            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python" class="py">
+            <img src="{{ url_for('static', filename='images/tk.png') }}" alt="Tkinter" class="tk">
+        </div>
+        <div class="container-weatherapp-git">
+            <h6 class="second-h6">
+                <span class="weather"><br>3. Weather</span>
+                <span class="app">App</span>
+            </h6>
+            <ul>
+                <li><a href="https://github.com/weybul/WeatherApp" target="_blank"><br><br><img src="{{ url_for('static', filename='images/git.png') }}" alt="GitHub" class="weatherapp-git"></a></li>
+            </ul>
+        </div>
+        <!-- div for container weather app -->
+        <div class="container-weatherapp">
+            <p class="fourth-paragraph"><br>I built this project straight after building the to-do-list. This is the most fun<br> 
+                I've had building something up until now. I was introduced to how APIs work<br> 
+                through this project. I had a vague idea of what they were before, but I<br> 
+                expected their implementation in code to be a lot more complex, but it wasn't<br> 
+                too bad at least for a weather API. I also worked with another API that allows<br> 
+                my weather app to extract the user's location according to their IP address. I<br> 
+                spent a lot of time trying to pick and choose the exact right icons for every<br> 
+                weather condition, as well as choosing the background images and GIFs,<br> 
+                specifically finding the right GIFs and then making sure they were transparent<br> 
+                before I could use them took quite some time and effort. Overall it wasn't a<br> 
+                bad experience.</p>
+                <img src="{{ url_for('static', filename='images/weather1.png') }}" alt="WeatherApp" class="weather1_shot" onclick="openModal('container-weatherapp', 'weather1.png')">
+                <img src="{{ url_for('static', filename='images/gif_weather.gif') }}" alt="WeatherAPP" class="gif_weather" onclick="openModal('container-weatherapp', 'gif_weather.gif')">
+                <img src="{{ url_for('static', filename='images/weather2.png') }}" alt="WeatherApp" class="weather2_shot" onclick="openModal('container-weatherapp', 'weather2.png')">
+        </div>
+        <p>
+            <span class="Note"><br>Note:</span>
+            <span class="gif-note">That the gif for the Weather App here has gone through some editing;<br>
+                hence, it's not the most clear representation of how the actual program<br>
+                runs. The GUI for this app looks considerably better when run directly.</span></p>
+        <div class="weatherapp-techs">
+            <h6 class="third-h6">
+                <span class="techs-weatherapp"><br>Technologies</span>
+                <span class="used-weatherapp">Used:</span>
+            </h6>
+            <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python" class="py-weatherapp">
+            <img src="{{ url_for('static', filename='images/tk.png') }}" alt="Tkinter" class="tk-weatherapp">
+        </div>
+    </main>
+    
+<!-- The modal for the first container -->
+<div id="myModal" class="modal">
+    <span class="prev" onclick="prevSlides(-1, 'container')" id="prevButton">&#10094;</span>
+    <span class="next" onclick="plusSlides(1, 'container')" id="nextButton">&#10095;</span>
+    <img id="modalImage" class="modal-content">
+</div>    
+
+<!-- The modal for the checkers container -->
+<div id="myModalCheckers" class="modal">
+    <span class="prev" onclick="prevSlides(-1, 'container-checkers')" id="prevButtonCheckers">&#10094;</span>
+    <span class="next" onclick="plusSlides(1, 'container-checkers')" id="nextButtonCheckers">&#10095;</span>
+    <img id="modalImageCheckers" class="modal-content-checkers">
+</div>
+
+<!-- Modal for the to-do-list container -->
+<div id="myModallist" class="modal">
+    <span class="prev" onclick="prevSlides(-1, 'container-todolist')" id="prevButtonlist">&#10094;</span>
+    <span class="next" onclick="plusSlides(1, 'container-todolist')" id="nextButtonlist">&#10095;</span>
+    <img id="modalImagelist" class="modal-content-list">
+</div>
+
+<!-- modal for Weather app -->
+<div id="myModalWeatherApp" class="modal">
+    <span class="prev" onclick="prevSlides(-1, 'container-weatherapp')" id="prevButtonWeatherApp">&#10094;</span>
+    <span class="next" onclick="plusSlides(1, 'container-weatherapp')" id="nextButtonWeatherApp">&#10095;</span>
+    <img id="modalImageWeatherApp" class="modal-content-WeatherApp">
+</div>
+
+<script>
+    // Global variable to keep track of the currently displayed image index for each container
+    var slideIndexMap = {
+        'container': 1,
+        'container-checkers': 1,
+        'container-todolist': 1,
+        'container-weatherapp': 1
+    };
+
+    // Open the modal
+    function openModal(containerId, imageSrc) {
+        var modalId; // opening modal based on the container id
+        if (containerId === 'container') {
+            modalId = 'myModal';
+        } else if (containerId === 'container-checkers') {
+            modalId = 'myModalCheckers';
+        } else if (containerId === 'container-todolist') {
+            modalId = 'myModallist';
+        } else if (containerId === 'container-weatherapp') {
+            modalId = 'myModalWeatherApp';
+        }
+        
+        var modal = document.getElementById(modalId);
+        var modalImage;
+        if (containerId === 'container') {
+            modalImage = modal.querySelector(".modal-content");
+        } else if (containerId === 'container-checkers') {
+            modalImage = modal.querySelector(".modal-content-checkers");
+        } else if (containerId === 'container-todolist') {
+            modalImage = modal.querySelector(".modal-content-list");
+        } else if (containerId === 'container-weatherapp') {
+            modalImage = modal.querySelector(".modal-content-WeatherApp");
+        }
+
+        modal.style.display = "block";
+        modalImage.src = "{{ url_for('static', filename='images/') }}" + imageSrc;
+
+        // Find the index of the selected image
+        var modalImages = document.querySelectorAll(`.${containerId} img:not(.link-image)`);
+        var selectedIndex = Array.from(modalImages).findIndex(img => img.src.includes(imageSrc));
+        if (selectedIndex !== -1) {
+            slideIndexMap[containerId] = selectedIndex + 1;
+        }
+        updateActiveImage(containerId);
+    }
+
+    // Close modal
+    function closeModal(containerId) {
+        var modalId;
+        if (containerId === 'container') {
+            modalId = 'myModal';
+        } else if (containerId === 'container-checkers') {
+            modalId = 'myModalCheckers';
+        } else if (containerId === 'container-todolist') {
+            modalId = 'myModallist';
+        } else if (containerId === 'container-weatherapp') {
+            modalId = 'myModalWeatherApp';
+        }
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    // Navigate between images
+    function plusSlides(n, containerId) {
+        indicateButtonPress(containerId, containerId === 'container' ? 'nextButton' : containerId === 'container-checkers' ? 'nextButtonCheckers' : containerId === 'container-todolist' ? 'nextButtonlist' : 'nextButtonWeatherApp');
+
+        var modalImages = document.querySelectorAll(`.${containerId} img:not(.link-image)`);
+        var numImages = modalImages.length;
+
+        // Update slideIndex based on the change specified by n
+        slideIndexMap[containerId] += n;
+
+        // Reset slideIndex to 1 if it exceeds the number of images
+        if (slideIndexMap[containerId] > numImages) {
+            slideIndexMap[containerId] = 1;
+        }
+
+        // Set slideIndex to the last image if it goes below 1
+        if (slideIndexMap[containerId] < 1) {
+            slideIndexMap[containerId] = numImages;
+        }
+
+        updateActiveImage(containerId, modalImages);
+    }
+
+    // Navigate to the previous image
+    function prevSlides(n, containerId) {
+        indicateButtonPress(containerId, containerId === 'container' ? 'prevButton' : containerId === 'container-checkers' ? 'prevButtonCheckers' : containerId === 'container-todolist' ? 'prevButtonlist' : 'prevButtonWeatherApp');
+
+        var modalImages = document.querySelectorAll(`.${containerId} img:not(.link-image)`);
+        var numImages = modalImages.length;
+
+        // Update slideIndex based on the change specified by n
+        slideIndexMap[containerId] += n; // This should add, not subtract, to go to the previous slide
+
+        // Reset slideIndex to the last image if it goes below 1
+        if (slideIndexMap[containerId] < 1) {
+            slideIndexMap[containerId] = numImages;
+        }
+
+        // Reset slideIndex to 1 if it exceeds the number of images
+        if (slideIndexMap[containerId] > numImages) {
+            slideIndexMap[containerId] = 1;
+        }
+
+        updateActiveImage(containerId, modalImages);
+    }
+
+    // Apply active class to the current image
+    function updateActiveImage(containerId, images) {
+        var modalId;
+        if (containerId === 'container') {
+            modalId = 'myModal';
+        } else if (containerId === 'container-checkers') {
+            modalId = 'myModalCheckers';
+        } else if (containerId === 'container-todolist') {
+            modalId = 'myModallist';
+        } else if (containerId === 'container-weatherapp') {
+            modalId = 'myModalWeatherApp';
+        }
+
+        var modalImage;
+        if (containerId === 'container') {
+            modalImage = document.querySelector(`#${modalId} .modal-content`);
+        } else if (containerId === 'container-checkers') {
+            modalImage = document.querySelector(`#${modalId} .modal-content-checkers`);
+        } else if (containerId === 'container-todolist') {
+            modalImage = document.querySelector(`#${modalId} .modal-content-list`);
+        } else if (containerId === 'container-weatherapp') {
+            modalImage = document.querySelector(`#${modalId} .modal-content-WeatherApp`);
+        }
+
+        var currentIndex = slideIndexMap[containerId] - 1;
+        modalImage.src = images[currentIndex].src;
+    }
+
+    // Close the modal when the user clicks outside of it
+    window.addEventListener("click", function(event) {
+        var modal = document.getElementById('myModal');
+        var modalCheckers = document.getElementById('myModalCheckers');
+        var modalList = document.getElementById('myModallist');
+        var modalweather = document.getElementById('myModalWeatherApp');
+
+        // Checkin if the clicked element is outside of the modal content
+        if (event.target === modal) {
+            closeModal('container');
+        } else if (event.target === modalCheckers) {
+            closeModal('container-checkers');
+        } else if (event.target === modalList) {
+            closeModal('container-todolist');
+        } else if (event.target === modalweather) {
+            closeModal('container-weatherapp');
+        }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowLeft') { // if the user presses left arrow key navigate back
+            prevSlides(-1, 'container');
+            prevSlides(-1, 'container-checkers');
+            prevSlides(-1, 'container-todolist');
+            prevSlides(-1, 'container-weatherapp')
+        } else if (event.key === 'ArrowRight') { // if its the right arrow key navigate ahead
+            plusSlides(1, 'container');
+            plusSlides(1, 'container-checkers');
+            plusSlides(1, 'container-todolist');
+            plusSlides(1, 'container-weatherapp')
+        }
+    });
+
+    // Function to indicate button press
+    function indicateButtonPress(containerId, buttonId) {
+        var button = document.getElementById(buttonId);
+        if (button) {
+            var direction = buttonId.includes('prev') ? '-5px' : '5px';
+            button.style.transform = `translateX(${direction})`;
+            button.classList.add('active-button');
+            setTimeout(() => {
+                button.style.transform = 'translateX(0)';
+                button.classList.remove('active-button');
+            }, 300); // Adjust the duration as needed
+        }
+    }
+
+    // Transform animation on button press
+    document.addEventListener('DOMContentLoaded', function() {
+        const buttons = [
+            document.querySelector('#prevButton'),
+            document.querySelector('#nextButton'),
+            document.querySelector('#prevButtonCheckers'),
+            document.querySelector('#nextButtonCheckers'),
+            document.querySelector('#prevButtonlist'),
+            document.querySelector('#nextButtonlist'),
+            document.querySelector('#prevButtonWeatherApp'),
+            document.querySelector('#nextButtonWeatherApp')
+        ];
+
+        buttons.forEach(button => {
+            if (button) {
+                button.addEventListener('click', function() {
+                    var direction = button.id.includes('prev') ? '-5px' : '5px';
+                    button.style.transform = `translateX(${direction})`;
+                    setTimeout(() => {
+                        button.style.transform = 'translateX(0)';
+                    }, 300); // Reset the transform after the animation duration
+                });
+            }
+        });
+    });
+
+    // adding event listener for transparent background
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector('.fixed-header');
+        var scrollposition = window.scrollY;
+
+        if (scrollposition > 0 ) {
+            header.classList.add('transparent')
+        } else {
+            header.classList.remove('transparent')
+        }
+    });
+
+</script>
+
+</body>
+</html>

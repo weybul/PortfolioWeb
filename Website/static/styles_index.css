@@ -1,0 +1,191 @@
+/* styles_index.css */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* applying styles for the body element */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(44, 39, 39);
+    font-size: large;
+}
+
+/* applying styles for the header element */
+header {
+    background-color: rgb(44, 39, 39);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* moving nav links to the top right */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+/* apply styles to navigation links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: darkturquoise;
+}
+
+/* style headings */
+h1 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    animation: slideInFromTop 2s ease;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.wel {
+    color: whitesmoke;
+}
+
+.come {
+    color: darkturquoise;
+}
+
+/* style for image container */
+.image-container {
+    margin: 15px;
+    text-align: center;
+}
+
+/* style for image */
+.image-container img {
+    max-width: 100%;
+    animation: fadein 4s;
+    margin-left: 20px;
+}
+
+/* style for text container */
+.text-container {
+    text-align: left;
+    margin-top: -380px;
+    padding-left: 20px;
+}
+
+/* style for paragraph */
+.first-paragraph {
+    animation: fadein 2s;
+}
+
+/* styling hi! this is */
+.hi-text {
+    color: white;
+    font-size: xx-large;
+}
+
+.name-text {
+    color: darkturquoise;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* styling second paragraph */
+.second-paragraph {
+    margin-top: 10px;
+}
+
+.i-am {
+    font-size: small;
+    color: white;
+}
+
+.software {
+    font-size: small;
+    color: darkturquoise;
+    font-weight: 600;
+}
+
+/* styling third paragraph */
+.third-paragraph {
+    margin-top: 10px;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 500;
+    animation: fadein 3s;
+}
+
+/* style for social media container */
+.social-media {
+    margin-top: 20px;
+    margin-left: -18px;
+    text-align: left; /* Align to the left */
+    padding-left: 20px; /* Match text container padding */
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-media ul li:hover {
+    transform: translateY(-3px);
+}
+
+.social-media ul li a img {
+    width: 28px;
+    height: auto;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

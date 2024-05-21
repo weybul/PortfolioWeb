@@ -1,0 +1,746 @@
+/* styles_projects.css */
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling body element */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* removing default margin ensures that the body section touches the edges of the page */
+    padding: 0; /* removing padding ensures the content touches the edges of the window above it */
+    background-color: rgba(0, 0, 0, 0.795);
+    font-size: large;
+    padding-top: 11%;
+}
+
+/* applying styles to the header element */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(44, 39, 39);
+    color: darkturquoise;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3 ease;
+}
+
+.fixed-header.transparent {
+    background-color: rgba(44, 39, 39, 0.8); /* Transparent background color with reduced opacity */
+    /* box-shadow: none; */
+}
+
+/* styling main element */
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+/* moving navigation links to the top right */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+/* styling navigation links */
+nav ul {
+    list-style-type: none; /* remove default bullet points from the navigation links */
+    padding: 0; /* removing default padding from the navigation list */
+}
+
+nav ul li {
+    display: inline-block; /* display navigation list items inline to create a horizontal navigation bar */
+    margin-right: 20px; /* add margin-right to separate navigation items */
+    transition: transform 0.3s ease;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+nav ul li:hover {
+    transform: translateY(-3px);
+}
+
+nav ul li a {
+    text-decoration: none; /* removing default text decoration */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: darkturquoise;
+}
+
+/* style sections */
+section {
+    margin-bottom: 30px; /* added margin-bottom to separate sections */
+    color: darkturquoise;
+}
+
+/* style headings */
+.fixed-header h1 {
+    margin-bottom: 15px; /* added bottom margin to headings to create space between them and the content */
+    margin-top: 50px;
+    flex: 1;
+    text-align: center;
+    animation-name: slideInFromTop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+.all {
+    color: whitesmoke;
+}
+
+.we {
+    color: darkturquoise;
+}
+
+.have {
+    color: whitesmoke;
+}
+
+.built {
+    color: darkturquoise;
+}
+
+.little {
+    color: whitesmoke;
+    font-size: larger;
+}
+
+.read {
+    color: darkturquoise;
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    align-items: center;    
+}
+
+.container ul {
+    list-style-type: none;
+}
+
+.first-paragraph {
+    flex: 1;
+    margin-right: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+.first-paragraph a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.first-paragraph-git {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: auto;
+    margin-right: 2px;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.first-paragraph-git:hover {
+    transform: translateY(-2px);
+}
+
+.first-paragraph-git a:focus,
+.first-paragraph-git a:active {
+    outline: none;
+}
+
+.hang_shot {
+    cursor: pointer;
+    width: 115px;
+    height: 90px;
+    margin-right: 13px;
+    animation-name: fadein;
+    animation-duration: 3s;
+    transition: transform 0.3s ease;
+}
+
+.hang_shot:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.mine_shot {
+    cursor: pointer;
+    width: 115px;
+    height: 90px;
+    margin-right: 13px;
+    animation-name: fadein;
+    animation-duration: 3s;
+    transition: transform 0.3s ease;
+}
+
+.mine_shot:hover {
+    transform: scale(1.1) translateY(-5px); /* zoom in by 10% */
+}
+
+.tic_shot {
+    cursor: pointer;
+    width: 115px;
+    height: 90px;
+    margin-right: 13px;
+    animation-name: fadein;
+    animation-duration: 3s;
+    transition: transform 0.3s ease;
+}
+
+.tic_shot:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.first {
+    color: white;
+    font-size: larger;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.project {
+    font-size: larger;
+    color: darkturquoise;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.container-checkers-git {
+    display: flex;
+    align-items: center;
+}
+
+.container-checkers-git ul {
+    list-style-type: none;
+}
+
+.checkers-git {
+    width: 28px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 32px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.3s ease;
+}
+
+.checkers-git:hover {
+    transform: translateY(-3px);
+}
+
+/* styling modal */
+.modal {
+    display: none; /*hide modal by default*/
+    position: fixed; /*position the modal relative to the viewport*/
+    top: 0; 
+    right: 0; 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+/* styling modal's content */
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 310px; /*fixed width*/
+    height: 210px; /*fixed height*/
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+/* Add styling for previous and next buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: 0.6s ease;
+    user-select: none;
+    animation: fadein 2s;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 9px 9px 0;
+    transition: transform 0.3s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 9px 0 0 9px;
+    transition: transform 0.3s ease;
+}
+
+.prev:hover {
+    transform: translateX(-3px);
+    background-color: darkturquoise;
+}
+
+.next:hover {
+    transform: translateX(3px);
+    background-color: darkturquoise;
+}
+
+/* Adding styles for the active button state */
+.active-button {
+    background-color: darkturquoise;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease; /* makes for a smoother button clicks */
+}
+
+.container-checkers {
+    display: flex;
+    align-items: center;
+}
+
+.second-paragraph {
+    flex: 1;
+    margin-right: 40px;
+    color: white;
+    font-size: medium;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.checker1_shot, .checker2_shot {
+    cursor: pointer;
+    margin-top: 45px;
+    width: 100px;
+    height: auto;
+    margin-right: 8px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.3s ease;
+}
+
+.checker1_shot:hover, .checker2_shot:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+.gif_checkers {
+    cursor: pointer;
+    margin-top: 25px;
+    width: 160px;
+    height: auto;
+    margin-right: 8px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.3s ease;
+}
+
+.gif_checkers:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+/* styling modal-content for checkers separately */
+.modal-content-checkers {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /*fixed width*/
+    height: auto; /*fixed height*/
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+h4 {
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.techs {
+    color: beige;
+}
+
+.used {
+    color: darkturquoise;
+}
+
+.container-techs {
+    display: flex;
+    align-items: center;
+}
+
+.python {
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.pygame {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.todo {
+    color: white;
+    font-size: x-large;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.list {
+    font-size: x-large;
+    color: darkturquoise;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.container-list-git {
+    display: flex;
+    align-items: center;
+}
+
+.container-list-git ul {
+    list-style-type: none;
+}
+
+.todolist-git {
+    width: 28px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 36px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.3s ease;
+}
+
+.todolist-git:hover {
+    transform: translateY(-3px);
+}
+
+.container-todolist {
+    display: flex;
+    align-items: center;
+}
+
+.third-paragraph {
+    flex: 1;
+    margin-bottom: 20px;
+    color: white;
+    font-size: medium;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.list1_shot {
+    cursor: pointer;
+    margin-top: 65px;
+    width: 75px;
+    height: auto;
+    margin-right: 8px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.4s ease;
+}
+
+.list1_shot:hover{
+    transform: scale(1.3) translateY(-7px);
+}
+
+.list2_shot {
+    cursor: pointer;
+    width: 90px;
+    height: auto;
+    margin-right: 8px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.4s ease;
+}
+
+.list2_shot:hover {
+    transform: scale(1.3) translateY(-8px);
+}
+
+.gif_list {
+    cursor: pointer;
+    margin-top: -95px;
+    width: 110px;
+    height: auto;
+    margin-right: 50px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.4s ease;
+}
+
+.gif_list:hover {
+    transform: scale(1.3) translateY(-9px);
+}
+
+/* styling modal content for to-do-list */
+.modal-content-list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers elements vertically and horizontally */
+    width: 300px;
+    height: auto;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.list-techs {
+    display: flex;
+    align-items: center;
+}
+
+.techs-list {
+    color: beige;
+}
+
+.used-list {
+    color: darkturquoise;
+}
+
+h6 {
+    animation-name: fadein;
+    animation-duration: 4s;
+    font-size: large;
+    margin-bottom: 1px;
+}
+
+.py {
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.tk {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.second-h6{
+    margin-top: 18px;
+}
+
+.weather {
+    color: white;
+    font-size: larger;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.app {
+    color: darkturquoise;
+    font-size: larger;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.container-weatherapp-git {
+    display: flex;
+    align-items: center;
+}
+
+.container-weatherapp-git ul {
+    list-style-type: none;
+}
+
+.weatherapp-git {
+    width: 28px;
+    height: auto;
+    margin-left: 8px;
+    margin-top: 5px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.3s ease;
+}
+
+.weatherapp-git:hover {
+    transform: translateY(-3px);
+}
+
+.container-weatherapp {
+    display: flex;
+    align-items: center;
+}
+
+.fourth-paragraph {
+    flex: 1;
+    /* margin-bottom: 20px; */
+    color: white;
+    font-size: medium;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.weather1_shot {
+    cursor: pointer;
+    margin-top: 75px;
+    width: 100px;
+    height: auto;
+    margin-right: 4px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.4s ease;    
+}
+
+.weather1_shot:hover {
+    transform: scale(1.3) translateY(-7px);
+}
+
+.weather2_shot {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 115px;
+    height: auto;
+    margin-right: 30px;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.4s ease;
+}
+
+.weather2_shot:hover {
+    transform: scale(1.3) translateY(-8px);
+}
+
+.gif_weather {
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 4px;
+    width: 165px;
+    height: auto;
+    animation-name: fadein;
+    animation-duration: 4s;
+    transition: transform 0.4s ease;    
+}
+
+.gif_weather:hover {
+    transform: scale(1.3) translateY(-9px);
+}
+
+.modal-content-WeatherApp {
+    position: fixed;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%) ;
+    width: 300px;
+    height: auto;
+    animation-name: fadein;
+    animation-duration: 1s;
+}
+
+.weatherapp-techs {
+    display: flex;
+    align-items: center;
+}
+
+.third-h6 {
+    animation-name: fadein;
+    animation-duration: 4s;
+    font-size: large;
+}
+
+.techs-weatherapp {
+    color: beige;
+}
+
+.used-weatherapp {
+    color: darkturquoise;
+}
+
+.py-weatherapp {
+    width: 50px;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 22px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.tk-weatherapp {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 22px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+.Note {
+    color: yellow;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+.gif-note {
+    color: cyan;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
