@@ -743,6 +743,14 @@ h6 {
         align-items: center; /* to ensure the displayed elements start from the start of paragraph */
     }
 
+    h4, h6 {
+        font-size: medium;
+    }
+
+    .third-h6 {
+        font-size: medium;
+    }
+
     body {
         font-size: medium;
         padding-top: 30%;
@@ -783,12 +791,27 @@ h6 {
     }
 
     /* image sizes */
-    .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .weather1_shot, .weather2_shot, .gif_weather {
+    .tic_shot, .gif_checkers, .checker2_shot, .weather2_shot, .gif_weather {
         width: 70px;
         height: auto;
-        /* display: block; */
         margin-bottom: 5px;
         margin-top: 10px;
+        margin-right: 3px;
+    }
+
+    .weather1_shot {
+        width: 70px;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 14px;
+        margin-right: 3px;
+    }
+
+    .checker1_shot {
+        width: 70px;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 12px;
         margin-right: 3px;
     }
 
@@ -804,11 +827,11 @@ h6 {
         margin-right: 0;
     }
 
-    .gif_list {
+    .list1_shot .list2_shot, .gif_list {
         width: 70px;
         height: auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-top: 7px;
         margin-right: 3px;
     }
     
