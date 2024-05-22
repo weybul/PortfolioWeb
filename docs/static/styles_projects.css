@@ -803,7 +803,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 15px;
+        margin-top: 16px;
         margin-right: 3px;
     }
 
@@ -811,7 +811,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 13px;
+        margin-top: 14px;
         margin-right: 3px;
     }
 
@@ -831,7 +831,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 7px;
+        /* margin-top: 7px; */
         margin-right: 3px;
     }
     
