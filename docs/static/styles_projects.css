@@ -740,7 +740,7 @@ h6 {
 
     .container, .container-checkers, .container-todolist, .container-weatherapp {
         flex-direction: column; /* to stack images/gifs vertically */
-        align-items: flex-start; /* to ensure the displayed elements start from the start of paragraph */
+        align-items: center; /* to ensure the displayed elements start from the start of paragraph */
     }
 
     body {
@@ -759,6 +759,7 @@ h6 {
     .first-paragraph, .second-paragraph, .third-paragraph, .fourth-paragraph {
         margin-right: 0;
         font-size: small;
+        white-space: normal;
     }
 
     .first, .project, .todo, .list, .weather, .app {
@@ -786,6 +787,8 @@ h6 {
         height: auto;
         display: block;
         margin-bottom: 5px;
+        margin-top: 5px;
+        margin-right: 3px;
     }
 
     .gif_list, .tic_shot, .checker2_shot, .weather2_shot {
