@@ -761,10 +761,6 @@ h6 {
         padding: 10px;
     }
 
-    .nav {
-        right: 20px;
-    }
-
     .first-paragraph, .second-paragraph, .third-paragraph, .fourth-paragraph {
         margin-right: 0;
         font-size: small;
@@ -791,7 +787,7 @@ h6 {
     }
 
     /* image sizes */
-    .tic_shot, .gif_checkers, .checker2_shot, .weather2_shot, .gif_weather {
+    .gif_checkers, .checker2_shot, .list2_shot, .gif_list, .weather2_shot, .gif_weather {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
@@ -799,11 +795,19 @@ h6 {
         margin-right: 3px;
     }
 
+    .list1_shot {
+        width: 70px;
+        height: auto;
+        margin-bottom: 5px;
+        margin-top: 7px;
+        margin-right: 3px;
+    }
+
     .weather1_shot {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 16px;
+        margin-top: 17px;
         margin-right: 3px;
     }
 
@@ -811,7 +815,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 14px;
+        margin-top: 15px;
         margin-right: 3px;
     }
 
@@ -825,14 +829,6 @@ h6 {
 
     .gif_list, .tic_shot, .checker2_shot, .weather2_shot {
         margin-right: 0;
-    }
-
-    .list1_shot, .list2_shot, .gif_list {
-        width: 70px;
-        height: auto;
-        margin-bottom: 5px;
-        /* margin-top: 7px; */
-        margin-right: 3px;
     }
     
 }
