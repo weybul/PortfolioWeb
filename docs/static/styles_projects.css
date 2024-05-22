@@ -737,6 +737,12 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+    .container, .container-checkers, .container-todolist, .container-weatherapp {
+        flex-direction: column; /* to stack images/gifs vertically */
+        align-items: flex-start; /* to ensure the displayed elements start from the start of paragraph */
+    }
+
     body {
         font-size: medium;
         padding-top: 30%;
