@@ -736,10 +736,9 @@ h6 {
     animation-duration: 4s;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
     body {
         font-size: medium;
-        padding-top: 16px;
     }
 
     .fixed-header {
@@ -765,7 +764,7 @@ h6 {
 
     /* modal sizes */
     .modal-content, .modal-content-list, .modal-content-WeatherApp {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
 
@@ -776,11 +775,11 @@ h6 {
 
     /* image sizes */
     .hang_shot, .mine_shot, .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .gif_list, .weather1_shot, .weather2_shot, .gif_weather {
-        width: 40px;
+        width: 50px;
         height: auto;
     }
 
-    .gif_weather {
+    .gif_list {
         margin-right: 0px;
     }
 
