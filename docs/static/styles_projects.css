@@ -772,23 +772,31 @@ h6 {
     }
 
     /* modal sizes */
-    .modal-content, .modal-content-list, .modal-content-WeatherApp {
-        width: 200px;
+    .modal-content-checkers, .modal-content-list, .modal-content-WeatherApp {
+        width: 300px;
         height: auto;
     }
 
-    .modal-content-checkers {
-        width: 50%;
-        height: auto;
+    .modal-content {
+        width: 250px;
+        height: 200px;
     }
 
     /* image sizes */
-    .hang_shot, .mine_shot, .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .gif_list, .weather1_shot, .weather2_shot, .gif_weather {
+    .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .weather1_shot, .weather2_shot, .gif_weather {
         width: 70px;
         height: auto;
-        display: block;
+        /* display: block; */
         margin-bottom: 5px;
-        margin-top: 7px;
+        margin-top: 10px;
+        margin-right: 3px;
+    }
+
+    .hang_shot, .mine_shot, .tic_shot {
+        width: 70px;
+        height: 60px;
+        margin-bottom: 5px;
+        margin-top: 10px;
         margin-right: 3px;
     }
 
@@ -797,7 +805,11 @@ h6 {
     }
 
     .gif_list {
+        width: 70px;
+        height: auto;
         margin-bottom: 10px;
+        margin-top: 10px;
+        margin-right: 3px;
     }
     
 }

@@ -199,6 +199,7 @@ h1 {
     .image-container {
         /* margin: 10px; */
         margin-left: 0;
+        margin-right: 2px;
     }
 
     .text-container {
