@@ -803,7 +803,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 2px;
+        /* margin-top: 2px; */
         margin-right: 3px;
     }
 
@@ -834,7 +834,22 @@ h6 {
     .gif_list, .tic_shot, .checker2_shot, .weather2_shot {
         margin-right: 0;
     }
+
+    .checkers-git {
+        margin-top: 30px;
+    }
+
+    .todolist-git {
+        margin-top: 32px;
+    }
+
+    .weatherapp-git {
+        margin-top: 4px;
+    }
     
+    .list-techs {
+        margin-top: 3px;
+    }
 }
 
 @keyframes fadein {
