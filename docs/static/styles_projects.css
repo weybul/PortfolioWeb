@@ -803,7 +803,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 14px;
+        margin-top: 15px;
         margin-right: 3px;
     }
 
@@ -811,7 +811,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 12px;
+        margin-top: 13px;
         margin-right: 3px;
     }
 
@@ -827,7 +827,7 @@ h6 {
         margin-right: 0;
     }
 
-    .list1_shot .list2_shot, .gif_list {
+    .list1_shot, .list2_shot, .gif_list {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
