@@ -403,6 +403,16 @@
         }
     });
 
+    function removeLineBreaks() {
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll('.first-paragraph, .second-paragraph, .third-paragraph, .fourth-paragraph').forEach(function(paragraph) {
+                paragraph.innerHTML = paragraph.innerHTML.replace(/<br\s*[\/]?>/gi, ' ');
+            });      
+        }
+    }
+    window.addEventListener('resize', removeLineBreaks);
+    window.addEventListener('DOMContentLoaded', removeLineBreaks);
+
 </script>
 
 </body>
