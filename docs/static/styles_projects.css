@@ -739,7 +739,7 @@ h6 {
 @media (max-width: 768px) {
     body {
         font-size: medium;
-        padding-top: 16%;
+        padding-top: 30%;
     }
 
     .fixed-header {
@@ -751,6 +751,7 @@ h6 {
     }
 
     .first-paragraph, .second-paragraph, .third-paragraph, .fourth-paragraph {
+        margin-right: 0;
         font-size: small;
     }
 
@@ -775,31 +776,21 @@ h6 {
 
     /* image sizes */
     .hang_shot, .mine_shot, .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .gif_list, .weather1_shot, .weather2_shot, .gif_weather {
-        width: 30px;
+        width: 70px;
         height: auto;
+        display: block;
+        margin-bottom: 5px;
     }
 
-    .gif_list {
-        margin-right: 0;
-    }
-
-    .tic_shot {
-        margin-right: 0;
-    }
-
-    .checker2_shot {
-        margin-right: 0;
-    }
-
-    .weather2_shot {
+    .gif_list, .tic_shot, .checker2_shot, .weather2_shot {
         margin-right: 0;
     }
 
     /* adjusting sizes for previous, next buttons */
-    .prev, .next {
+    /* .prev, .next {
         font-size: 18px;
         padding: 10px;
-    }
+    } */
 }
 
 @keyframes fadein {
