@@ -743,6 +743,10 @@ h6 {
         align-items: center; /* to ensure the displayed elements start from the start of paragraph */
     }
 
+    nav {
+        margin-left: 4px;
+    }
+
     h4, h6 {
         font-size: medium;
     }
@@ -799,7 +803,7 @@ h6 {
         width: 70px;
         height: auto;
         margin-bottom: 5px;
-        margin-top: 7px;
+        margin-top: 6px;
         margin-right: 3px;
     }
 

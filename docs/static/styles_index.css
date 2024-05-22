@@ -191,11 +191,18 @@ h1 {
         padding: 10px;
     }
 
+    nav {
+        margin-left: 4px;
+    }
+
     /* adjusting container margins and paddings */
     .image-container {
-        /* margin: 10px; */
-        margin-left: 0;
-        margin-right: 4px;
+        margin: 10px;
+    }
+
+    .image-container img {
+        width: 85%;
+        margin-right: 2px;
     }
 
     .text-container {
