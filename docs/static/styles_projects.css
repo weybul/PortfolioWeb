@@ -739,7 +739,6 @@ h6 {
 @media (max-width: 768) {
     body {
         font-size: medium;
-        padding-top: 5px;
     }
 
     .fixed-header {
@@ -778,13 +777,13 @@ h6 {
 
     /* modal sizes */
     .modal-content, .modal-content-checkers, .modal-content-list, .modal-content-WeatherApp {
-        width: 90%;
+        width: 80%;
         height: auto;
     }
 
     /* image sizes */
     .hang_shot, .mine_shot, .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .gif_list, .weather1_shot, .weather2_shot, .gif_weather {
-        width: 100px;
+        width: 60px;
         height: auto;
     }
 
