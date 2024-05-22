@@ -739,7 +739,7 @@ h6 {
 @media (max-width: 768px) {
 
     .container, .container-checkers, .container-todolist, .container-weatherapp {
-        flex-direction: row; /* to stack images/gifs vertically */
+        flex-direction: column; /* to stack images/gifs vertically */
         align-items: center; /* to ensure the displayed elements start from the start of paragraph */
     }
 
@@ -796,9 +796,9 @@ h6 {
         margin-right: 0;
     }
 
-    /* .gif_list {
-        margin-bottom: 10p; */
-    /* } */
+    .gif_list {
+        margin-bottom: 10px;
+    }
     
 }
 

@@ -197,8 +197,8 @@ h1 {
 
     /* adjusting container margins and paddings */
     .image-container {
-        margin: 10px;
-        margin-left: 10px;
+        /* margin: 10px; */
+        margin-left: 0;
     }
 
     .text-container {
