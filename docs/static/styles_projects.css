@@ -743,23 +743,10 @@ h6 {
 
     .fixed-header {
         padding: 10px;
-        flex-direction: column;
     }
 
-    nav {
-        position: static;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
+    .nav {
+        right: 20px;
     }
 
     .first-paragraph, .second-paragraph, .third-paragraph, .fourth-paragraph {
@@ -771,20 +758,33 @@ h6 {
         font-size: medium;
     }
 
-    .first-paragraph a, .second-paragraph a, .third-paragraph a, .fourth-paragraph a {
+    .first-paragraph a {
         font-size: small;
     }
 
     /* modal sizes */
-    .modal-content, .modal-content-checkers, .modal-content-list, .modal-content-WeatherApp {
+    .modal-content, .modal-content-list, .modal-content-WeatherApp {
         width: 80%;
+        height: auto;
+    }
+
+    .modal-content-checkers {
+        width: 50%;
         height: auto;
     }
 
     /* image sizes */
     .hang_shot, .mine_shot, .tic_shot, .checker1_shot, .checker2_shot, .gif_checkers, .list1_shot, .list2_shot, .gif_list, .weather1_shot, .weather2_shot, .gif_weather {
-        width: 60px;
+        width: 40px;
         height: auto;
+    }
+
+    .gif_weather {
+        margin-right: 0px;
+    }
+
+    .tic_shot {
+        margin-right: 0px;
     }
 
     /* adjusting sizes for previous, next buttons */
