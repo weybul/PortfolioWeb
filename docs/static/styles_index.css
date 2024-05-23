@@ -202,7 +202,8 @@ h1 {
 
     .image-container img {
         width: 90%;
-        margin-right: 6px;
+        /* margin-right: 6px; */
+        /* margin-left: 4; */
     }
 
     .text-container {
