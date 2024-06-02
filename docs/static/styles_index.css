@@ -95,7 +95,7 @@ h1 {
 
 /* style for image */
 .image-container img {
-    max-width: 100%;
+    max-width: 60%;
     animation: fadein 4s;
     margin-left: 20px;
 }
