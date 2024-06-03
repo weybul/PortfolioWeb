@@ -103,7 +103,7 @@ h1 {
 /* style for text container */
 .text-container {
     text-align: left;
-    margin-top: -380px;
+    margin-top: -360px;
     padding-left: 20px;
 }
 
@@ -201,7 +201,7 @@ h1 {
     }
 
     .image-container img {
-        width: 97%;
+        width: 100%;
         /* margin-right: 6px; */
         margin-left: 8px;
     }
